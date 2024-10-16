@@ -1,0 +1,137 @@
+body{
+    background-color: #575757;
+}
+
+
+nav {
+    background-color: hsl(0, 0%, 0%);
+    padding: 10px 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+.gallery-container {
+    display: flex; /* Usamos flexbox para alinhar os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Espaço entre os itens da galeria */
+    margin: 20px; /* Margem ao redor da galeria */
+}
+
+
+.gallery-item {
+    flex: 1 1 200px; /* Faz com que cada item tenha uma largura mínima de 200px */
+    max-width: 300px; /* Limita a largura máxima dos itens */
+    overflow: hidden; /* Esconde partes da imagem que ultrapassam o contêiner */
+    border-radius: 8px; /* Arredonda os cantos dos itens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve para os itens */
+}
+
+
+.gallery-item img {
+    width: 100%; /* Faz a imagem preencher todo o espaço do item */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço embaixo da imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+    transition: transform 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse */
+}
+
+
+.container {
+    display: flex; /* Define o contêiner como um flexbox */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+}
+
+
+/* Estilo para cada card */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Arredonda os cantos dos cards */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 1; /* Permite que os cards cresçam igualmente */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+}
+
+
+/* Estilo para o título dos cards */
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+
+/* Estilo para o parágrafo dos cards */
+.card p {
+    color: #666;
+}
