@@ -1,11 +1,12 @@
 body {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Pna0__njCZc2iW0y8q6Ghap7VKJmD3NfCA&s');
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8VHLEKPvy2auva9VFHvkm9BMug1dmdcgwM3nWcLw6w_13XHbNMiAF1pPsaPHTwu0ul3nqh2J42dwwtHXKdMXlm-lwpeggiprnMzIRgN3Xe0VJcn_vrASXjxM6vOeXDQyRLN8faGaNxiI/s1600/wpp+fusca+2.jpg);
     background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço */
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
     background-attachment: fixed; /* Faz a imagem de fundo se manter fixa ao rolar a página */
     margin: 0;
     font-family: Arial, sans-serif;
+    
 }
 
 img {
@@ -26,7 +27,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: left;
+    justify-content: center; /* Altera de left para center para centralizar os itens */
 }
 
 nav ul li {
@@ -72,4 +73,37 @@ nav ul li .dropdown-content li a:hover {
 
 nav ul li:hover .dropdown-content {
     display: block;
+}
+
+.textodeboasvindas {
+    background-color: rgba(255, 255, 255, 0.76); /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem externa, centralizando o container */
+    border-radius: 10px; /* Bordas arredondadas, opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade, opcional */
+    text-align: center; /* Centraliza o texto dentro do container */
+    max-width: 800px; /* Largura máxima do container */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre as imagens */
+}
+
+.gallery-item img {
+    width: 300px; /* Defina uma largura adequada para as imagens */
+    border-radius: 8px; /* Bordas arredondadas, opcional */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para as imagens, opcional */
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.76); /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem externa, centralizando o container */
+    border-radius: 10px; /* Bordas arredondadas, opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade, opcional */
+    text-align: center; /* Centraliza o texto dentro do container */
+    max-width: 800px; /* Largura máxima do container */
 }
